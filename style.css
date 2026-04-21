@@ -1,0 +1,110 @@
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 500;
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tag:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Cores (pode ajustar como quiser) */
+.tag-python {
+    background-color: #3776AB;
+}
+
+.tag-ml {
+    background-color: #FF6F00;
+}
+
+.tag-data {
+    background-color: #6f42c1;
+}
+
+.tag-pandas {
+    background-color: #150458;
+}
+
+.tag-sklearn {
+    background-color: #F7931E;
+}
+
+.tag-powerbi {
+    background-color: #F2C811;
+    color: #000;
+}
+
+.tag-dashboard {
+    background-color: #20c997;
+}
+
+.tag-viz {
+    background-color: #0d6efd;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+h1,
+h2,
+h5 {
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* ----- tema claro ----- */
+:root {
+    --bg: #f8f9fa;
+    --text: #212529;
+    --card: #ffffff;
+    --border: #e5e7eb;
+}
+
+/* ----- dark mode ----- */
+.dark-mode {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --card: #1e293b;
+    --border: #334155;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+}
+
+.tag {
+    color: white;
+}
+
+/* Botões no dark */
+.dark-mode .btn-dark {
+    background-color: #e5e7eb;
+    color: #000;
+}
+
+.dark-mode .btn-outline-dark {
+    border-color: #e5e7eb;
+    color: #e5e7eb;
+}
